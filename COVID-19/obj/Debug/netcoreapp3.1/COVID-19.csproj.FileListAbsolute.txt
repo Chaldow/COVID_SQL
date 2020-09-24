@@ -1,0 +1,42 @@
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.exe
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.deps.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.runtimeconfig.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.runtimeconfig.dev.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.pdb
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csprojAssemblyReference.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.AssemblyInfoInputs.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.AssemblyInfo.cs
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csproj.CoreCompileInputs.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.RazorTargetAssemblyInfo.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\staticwebassets\COVID-19.StaticWebAssets.Manifest.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\staticwebassets\COVID-19.StaticWebAssets.xml
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.pdb
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\Trabalho 1 h1\aaaa\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.genruntimeconfig.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.exe
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.deps.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.runtimeconfig.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.runtimeconfig.dev.json
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\COVID-19.pdb
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csprojAssemblyReference.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.AssemblyInfoInputs.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.AssemblyInfo.cs
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.RazorTargetAssemblyInfo.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\staticwebassets\COVID-19.StaticWebAssets.Manifest.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\staticwebassets\COVID-19.StaticWebAssets.xml
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.pdb
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.genruntimeconfig.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csproj.CoreCompileInputs.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csproj.CopyComplete
