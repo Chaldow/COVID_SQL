@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using COVID_19.Models;
 using COVID_19.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace COVID_19.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "administrador")]
     public class PacienteController : ControllerBase
     {
         private PacienteRepository _repository;
@@ -21,7 +23,7 @@ namespace COVID_19.Controllers
         [HttpGet]
         public async Task<IActionResult> Get() 
         {
-            return Ok(_repository.ListarTodosPacientes());
+            return Ok("Listagem de todos os pacientes");
         }
 
         [HttpGet("{id}")]
@@ -35,16 +37,7 @@ namespace COVID_19.Controllers
 
             return Ok(pacienteTeste);
         }
-        public async Task<IActionResult> Get(Paciente cpf)
-        {
-            var pacienteCPF = _repository.BuscarPacientePorCPF(cpf);
-            if (pacienteCPF == null)
-            {
-                return NotFound();
-            }
 
-            return Ok(pacienteCPF);
-        }
         [HttpPost]
         public async Task<IActionResult> Post(Paciente paciente)
         {

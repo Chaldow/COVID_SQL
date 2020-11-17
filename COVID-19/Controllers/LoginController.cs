@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace COVID_19.Controllers
-{
+{  [Route("api/[controller]")]
     public class LoginController
     {
         private LoginRepository _repository;
