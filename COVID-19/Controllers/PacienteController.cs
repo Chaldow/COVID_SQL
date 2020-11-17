@@ -35,6 +35,16 @@ namespace COVID_19.Controllers
 
             return Ok(pacienteTeste);
         }
+        public async Task<IActionResult> Get(Paciente cpf)
+        {
+            var pacienteCPF = _repository.BuscarPacientePorCPF(cpf);
+            if (pacienteCPF == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pacienteCPF);
+        }
         [HttpPost]
         public async Task<IActionResult> Post(Paciente paciente)
         {

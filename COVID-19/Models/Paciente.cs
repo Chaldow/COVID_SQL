@@ -9,6 +9,7 @@ namespace COVID_19.Models
     {
         public int id { get; set; }
         public string nome { get; set; }
+        public int cpf { get; set; }
         public string cidade  { get; set; }
         public string estado  { get; set; }
         public string sexo  { get; set; }

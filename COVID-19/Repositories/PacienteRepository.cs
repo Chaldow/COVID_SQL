@@ -1,4 +1,5 @@
-﻿using COVID_19.Models;
+﻿using COVID_19.Context;
+using COVID_19.Models;
 using COVID_19.Validators;
 using System;
 using System.Collections.Generic;
@@ -9,17 +10,22 @@ namespace COVID_19.Repositories
 {
     public class PacienteRepository : IPacienteRepository
     {
-        private IList<Paciente> listaPaciente = new List<Paciente>();
-        public PacienteRepository()
-        {
-            listaPaciente.Add(new Paciente() { id = 1, cidade = "Nunes" });
-            listaPaciente.Add(new Paciente() { id = 2, cidade = "Humberto" });
-            listaPaciente.Add(new Paciente() { id = 3, cidade = "Robinson" });
-            listaPaciente.Add(new Paciente() { id = 4, cidade = "Renato" });
+        private COVID_Context context;
+
+        public PacienteRepository() {
+            context = new COVID_Context();    
         }
+
+        private IList<Paciente> listaPaciente = new List<Paciente>();
+       
         public Paciente BuscarPacientePorId(int pid)
         {
-            return listaPaciente.Where(x => x.id == pid).FirstOrDefault();
+            return context.PACIENTE.Where(c => c.id == pid).FirstOrDefault();
+        }
+
+        public Paciente BuscarPacientePorCPF(int cpf)
+        {
+            return context.PACIENTE.Where(c => c.id == cpf).FirstOrDefault();
         }
 
         public void InserirPaciente(Paciente paciente)
@@ -27,14 +33,19 @@ namespace COVID_19.Repositories
             var validator = new PacienteValidator();
             var validRes = validator.Validate(paciente);
             if (validRes.IsValid)
-                listaPaciente.Add(paciente);
+                context.PACIENTE.Add(paciente);
             else
                 throw new Exception(validRes.Errors.FirstOrDefault().ToString());
         }
 
+        internal object BuscarPacientePorCPF(Paciente cpf)
+        {
+            throw new NotImplementedException();
+        }
+
         public IList<Paciente> ListarTodosPacientes()
         {
-            return listaPaciente;
+            return context.PACIENTE.ToList();
         }
     }
 }
