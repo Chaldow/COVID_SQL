@@ -22,10 +22,13 @@ namespace COVID_19.Repositories
         {
             return context.PACIENTE.Where(c => c.id == pid).FirstOrDefault();
         }
-
-        public Paciente BuscarPacientePorCPF(int cpf)
+        public IList<Paciente> BuscarPacienteCidade(string cidade)
         {
-            return context.PACIENTE.Where(c => c.id == cpf).FirstOrDefault();
+            return (IList<Paciente>)context.PACIENTE.Where(p => p.cidade == cidade);
+        }
+        public Paciente BuscarPacienteCPF(string cpf)
+        {
+            return context.PACIENTE.Where(c => c.cpf == cpf).FirstOrDefault();
         }
 
         public void InserirPaciente(Paciente paciente)
@@ -37,15 +40,9 @@ namespace COVID_19.Repositories
             else
                 throw new Exception(validRes.Errors.FirstOrDefault().ToString());
         }
-
-        internal object BuscarPacientePorCPF(Paciente cpf)
-        {
-            throw new NotImplementedException();
-        }
-
         public IList<Paciente> ListarTodosPacientes()
         {
-            return context.PACIENTE.ToList();
+            return (IList<Paciente>) context.PACIENTE;
         }
     }
 }
