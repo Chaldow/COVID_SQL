@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COVID-19", "COVID-19\COVID-19.csproj", "{3000113A-0D42-4238-A9F3-CCF5BE7CC861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COVID-19", "COVID-19\COVID-19.csproj", "{3000113A-0D42-4238-A9F3-CCF5BE7CC861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COVID19.Test", "COVID19.Test\COVID19.Test.csproj", "{CC3CC5D6-B9C0-419D-8344-FAD29B7CBE53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3000113A-0D42-4238-A9F3-CCF5BE7CC861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3000113A-0D42-4238-A9F3-CCF5BE7CC861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3000113A-0D42-4238-A9F3-CCF5BE7CC861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3CC5D6-B9C0-419D-8344-FAD29B7CBE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3CC5D6-B9C0-419D-8344-FAD29B7CBE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3CC5D6-B9C0-419D-8344-FAD29B7CBE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3CC5D6-B9C0-419D-8344-FAD29B7CBE53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

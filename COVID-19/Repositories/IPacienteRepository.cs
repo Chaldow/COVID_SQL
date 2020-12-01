@@ -10,6 +10,12 @@ namespace COVID_19.Repositories
     {
         public IList<Paciente> ListarTodosPacientes();
         public Paciente BuscarPacientePorId(int id);
-        public void InserirPaciente(Paciente paciente);
+        public IList<Paciente> BuscarPacienteCidade(string cidade);
+        public IList<Paciente> BuscarPacienteCPF(string cpf);
+        public int InserirPaciente(Paciente paciente);
+        public void RemoverPaciente(Paciente paciente);
+        public void AtualizarPaciente(Paciente paciente);
+
+
     }
 }

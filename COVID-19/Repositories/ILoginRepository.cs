@@ -10,5 +10,5 @@ namespace COVID_19.Repositories
     { 
      public Login GetLogin(Login login);
  
-}
+    }
 }

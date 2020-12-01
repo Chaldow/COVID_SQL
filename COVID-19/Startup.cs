@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using COVID_19.Context;
+using COVID_19.Repositories;
+using COVID_19.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,6 +17,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace COVID_19
 {
@@ -50,8 +54,38 @@ namespace COVID_19
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
+               
 
             });
+
+            services.AddSwaggerGen(c => {
+
+                c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                {
+                    Description = "Standard Authorization header using the Bearer scheme. Example: \"bearer {token}\"",
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+                c.OperationFilter<SecurityRequirementsOperationFilter>();
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Registro Pacientes COVID",
+                        Version = "v1",
+                        Description = "Trabalho h1. API REST criada com o ASP.NET Core 3 para consulta de registros de pacientes com COVID",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Nunes",
+                            Url = new Uri("https://github.com/Chaldow/COVID_SQL")
+                        }
+                    });
+            });
+
+            services.AddScoped<COVID_Context, COVID_Context>();
+            services.AddTransient<IPacienteRepository, PacienteRepository>();
+            services.AddTransient<IPacienteService, PacienteService>();
+            services.AddTransient<ILoginRepository, LoginRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +95,11 @@ namespace COVID_19
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Covid App V1");
+            });
 
             app.UseHttpsRedirection();
 

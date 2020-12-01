@@ -13,9 +13,9 @@ namespace COVID_19.Context
         public COVID_Context() { 
         
         }
-        public DbSet<Paciente> PACIENTE { get; set; }
+        public DbSet<Paciente> pacientes { get; set; }//padronizar plural
 
-        public virtual DbSet<Login> LOGINS { get; set; }
+        public virtual DbSet<Login> logins { get; set; }
         public COVID_Context(DbContextOptions<COVID_Context> options) : base(options) { 
         
         }

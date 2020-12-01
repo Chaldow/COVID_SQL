@@ -78,5 +78,15 @@ C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\
 C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.csproj.CoreCompileInputs.cache
+C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Nunes\Desktop\Guilherme\Faculdade\4° periodo\h1\COVID-19\COVID-19\obj\Debug\netcoreapp3.1\COVID-19.MvcApplicationPartsAssemblyInfo.cache

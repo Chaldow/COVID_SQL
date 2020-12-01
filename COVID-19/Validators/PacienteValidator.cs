@@ -19,8 +19,13 @@ namespace COVID_19.Validators
 				.NotEmpty().WithMessage("CPF obrigatório")
 				.NotNull().WithMessage("CPF obrigatório")
 				.Must(IsCpf).WithMessage("CPF NÃO VÁLIDO")
-				.NotEqual(p => p.cpf).WithMessage("CPF JÀ EXISTE");
-        }
+				.Equal(p => p.cpf).WithMessage("CPF JÀ EXISTE");
+			RuleFor(p => p.idade)
+				.LessThanOrEqualTo(120).WithMessage("Idade maior que 120 anos")
+			.GreaterThanOrEqualTo(1).WithMessage("Não é possivel cadastrar idade negativa")
+			;
+				
+		}
 
 		public bool IsCpf(string cpf)
 			{

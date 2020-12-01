@@ -10,18 +10,19 @@ namespace COVID_19.Repositories
     public class LoginRepository : ILoginRepository
     {
         private COVID_Context context;
-        public LoginRepository() {
-            context = new COVID_Context();
+        public LoginRepository(COVID_Context _context) {
+            context = _context;
         }
 
         public Login GetLogin(Login login)
         {
-            var resultado = context.LOGINS.Where(l => l.usuario == login.usuario && l.senha == login.senha).FirstOrDefault();
+            var resultado = context.logins.Where(l => l.usuario == login.usuario && l.senha == login.senha).FirstOrDefault();
             if (resultado != null)
             {
-                // criar contexto ai no banco de dados
+                // criar contexto no banco de dados
                 //fazer o consulta.
                 login.id = resultado.id;
+                login.senha = resultado.senha;
                 login.grupo = resultado.grupo;
                 return login;
             }

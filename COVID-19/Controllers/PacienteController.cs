@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using COVID_19.Models;
 using COVID_19.Repositories;
+using COVID_19.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,23 +13,24 @@ namespace COVID_19.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "administrador")]
     public class PacienteController : ControllerBase
     {
-        private PacienteRepository _repository;
-        public PacienteController() 
+        private readonly IPacienteService _service;
+        public PacienteController(IPacienteService services) 
         {
-            _repository = new PacienteRepository();
+            _service = services;
         }
         [HttpGet]
         public async Task<IActionResult> Get() 
         {
-            return Ok(_repository.ListarTodosPacientes());
+            return Ok("Listagem de todos os pacientes");
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var pacienteTeste = _repository.BuscarPacientePorId(id);
+            var pacienteTeste = _service.buscaPorId(id);
             if (pacienteTeste == null)
             {
                 return NotFound();
@@ -35,27 +38,24 @@ namespace COVID_19.Controllers
 
             return Ok(pacienteTeste);
         }
-        public async Task<IActionResult> Get(Paciente cpf)
-        {
-            var pacienteCPF = _repository.BuscarPacientePorCPF(cpf);
-            if (pacienteCPF == null)
-            {
-                return NotFound();
-            }
 
-            return Ok(pacienteCPF);
-        }
         [HttpPost]
         public async Task<IActionResult> Post(Paciente paciente)
         {
-         _repository.InserirPaciente(paciente);
+            _service.inserir(paciente);
          return Ok("Paciente criado com sucesso");
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Put(int id, Paciente paciente) { return Ok("Paciente atualizado com sucesso"); }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, Paciente paciente) {
+            _service.atualizar(id);
+            return Ok("Paciente atualizado com sucesso"); 
+        }
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id) { return Ok("Paciente removido com sucesso!"); }
+        public async Task<IActionResult> Delete(int id) {
+            _service.remover(id);
+            return Ok("Paciente removido com sucesso!"); 
+        }
 
 
     }
