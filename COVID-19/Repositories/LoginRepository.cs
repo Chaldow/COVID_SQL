@@ -11,11 +11,15 @@ namespace COVID_19.Repositories
     public class LoginRepository : ILoginRepository
     {
         private COVID_Context context;
-        public LoginRepository() {
-            context = new COVID_Context();
+        public LoginRepository(COVID_Context _context) {
+            context = _context;
         }
-
         public Login GetLogin(Login login)
+        {
+            var resultado = context.logins.Where(l => l.usuario == login.usuario && l.senha == login.senha).FirstOrDefault();
+            return resultado;
+        }
+        /*public Login GetLogin(Login login)
         {
             var resultado = context.logins.Where(l => l.usuario == login.usuario && l.senha == login.senha).FirstOrDefault();
             if (resultado != null)
@@ -27,7 +31,8 @@ namespace COVID_19.Repositories
                 return login;
             }
             return null;
-        }
+        }*/
+
 
     }
 }

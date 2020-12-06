@@ -34,17 +34,12 @@ namespace COVID_19.Controllers
 
 
             var token = TokenService.GenerateToken(usuario);
-            login.senha = "";
+            usuario.senha = "";
             return new
             {
                 usuario = usuario,
                 token = token
             };
-        }
-
-        private ActionResult<dynamic> NotFound(string v)
-        {
-            throw new NotImplementedException();
         }
     }
 }
